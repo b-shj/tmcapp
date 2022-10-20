@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Login / Sign Up form</title>
+    <style>
+        :root{
+            --dark-green : #267265;
+            --light-green : #98d4ca;
+            --white : rgb(245, 249, 248);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:  "Poppins" , sans-serif;
+        }
+
+        body {
+            background-image: url("images/bg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            width: 13%;
+            position: absolute;
+            top: 1rem;
+            left: 2vw;
+            color: white;
+        }
+
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box{
+            width: 380px;
+            height: 480px;
+            background-color: var(--white);
+            overflow: hidden;
+            padding: 1rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        #login{
+            display: block;
+            color: var(--dark-green);
+        }
+
+        #register{
+            display: none;
+            color: var(--dark-green);
+        }
+
+        .button-box{
+            width: 260px;
+            border-radius: 30px;
+            background-color: var(--dark-green);
+            position: relative;
+            margin: .5rem;
+            margin-bottom: 5rem;
+        }
+
+        .toggle-btn {
+            padding: 7px 33px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            color: var(--white);
+            font-weight: medium;
+            font-size: 1.15rem;
+        }
+
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 130px;
+            height: 100%;
+            background-color: var(--light-green);
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .login{
+            color: var(--dark-green);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            color: #333;
+            outline: none;
+            background: transparent;
+            font-size: 1.15rem;
+        }
+
+        .input-group{
+            margin: 2rem;
+        }
+
+        .submit-btn{
+            margin: 1rem auto;
+            width: 85%;
+            padding: 5px 30px;
+            cursor: pointer;
+            display: block;
+            background-color: var(--dark-green);
+            color: var(--white);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            transition: 0.4s;
+            border: 2px solid white;
+            font-size: 1.25rem;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--light-green);
+            border: 2px solid var(--dark-green);
+            color: var(--dark-green);
+        } 
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <img src="images/logo.png" class="logo" alt="logo">
+
+
+    <div class="form-box">
+
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn login" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn register" onclick="register()">Sign Up</button>
+        </div>
+
+        <form id="login" class="input-group" action="/login" method="post" abineguid="C45303368C0B40F8AFE44A516BDE0093">
+            <input id="csrf_token" name="csrf_token" type="hidden" value="IjY2Y2M2ZjU3OGJmNWVlMTQyYjY3MGJhYTdkMDY5NjA1ZTgzYjVjNDMi.Y0625Q.5857yzjka1hQN5OhOLz9Xw8NJo4">
+            <input class="input-field" id="email" name="email" placeholder="Email" required="" type="email" value="">
+            <input class="input-field" id="password" maxlength="15" minlength="8" name="password" placeholder="Password" required="" type="password" value="">
+            
+            <input class="submit-btn" id="submit" name="submit" type="submit" value="Login">
+        </form>
+
+        <form id="register" class="input-group" action="/signup" method="post" abineguid="7DF6B565AE704862BAAF8E249FD93A2C">
+            <input id="csrf_token" name="csrf_token" type="hidden" value="IjY2Y2M2ZjU3OGJmNWVlMTQyYjY3MGJhYTdkMDY5NjA1ZTgzYjVjNDMi.Y0625Q.5857yzjka1hQN5OhOLz9Xw8NJo4">
+            <input class="input-field" id="username" maxlength="50" minlength="2" name="username" placeholder="Name" required="" type="text" value="">
+            <input class="input-field" id="email" name="email" placeholder="Email" required="" type="email" value="">
+            <input class="input-field" id="password" maxlength="15" minlength="8" name="password" placeholder="Password" required="" type="password" value="">
+            <input class="submit-btn" id="submit" name="submit" type="submit" value="Signup">
+        </form>
+    </div>
+
+</div>
+
+<script>
+    function login(){
+        document.getElementById('register').style.display = "none"
+        document.getElementById('login').style.display = "block"
+        document.querySelector('.login').style.color = "#267265"
+        document.getElementById('btn').style.left = "0px"
+        document.querySelector('.register').style.color = "rgb(245, 249, 248)"
+    }
+
+    function register(){
+        document.getElementById('login').style.display = "none"
+        document.getElementById('register').style.display = "block"
+        document.querySelector('.register').style.color = "#267265"
+        document.querySelector('.login').style.color = "rgb(245, 249, 248)"
+        document.getElementById('btn').style.left = "130px"
+    }
+</script>
+</body>
+</html>
