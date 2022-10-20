@@ -35,11 +35,8 @@
         }
 
         .wrapper {
-            height: 100%;
-            width: 100%;
-            background-position: center;
-            background-size: cover;
-            position: absolute;
+            height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -143,6 +140,14 @@
             border: 2px solid var(--dark-green);
             color: var(--dark-green);
         } 
+
+        @media (max-width: 480px) {
+            .form-box{
+                width: 280px;
+                height: 380px;
+                font-size: 1rem;
+            }
+        }
 
 
     </style>
