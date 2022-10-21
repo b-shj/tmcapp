@@ -10,16 +10,38 @@
 </head>
 <body>
     <div class="wrapper">
-        <ol class="form-box">
-            <li class="que">
-                <p class="question">Any other symptoms do you have?</p>
-                <p class="answer">Yes,I have x y and z</p>
-            </li>
-            <li class="que">
-                <p class="question">Any other symptoms do have?</p>
-                <p class="answer">Yes,I have x y and z</p>
-            </li>
-        </ol>
+        <div class="form-box" id="form-box">
+
+        </div>
     </div>
+
+    <script>
+        let form = document.getElementById('form-box')
+
+        let arr = [
+            {
+                "question" : "Do you recently had any emotional or physical stress?",
+                "answer": "yes"
+            },
+            {
+                "question" : "Do you sleep atleast 6 - 8 hrs?",
+                "answer": "yes"
+            }
+        ]
+
+        for(let i=0; i<arr.length; i++){
+            let question = document.createElement('p')
+            question.classList.add('question')
+            let answer = document.createElement('p')
+            answer.classList.add('answer')
+            let div = document.createElement('div')
+            div.classList.add('que')
+            question.innerText = arr[i].question
+            answer.innerText = arr[i].answer
+            div.appendChild(question)
+            div.appendChild(answer)
+            form.appendChild(div)
+        }
+    </script>
 </body>
 </html>

@@ -1,369 +1,350 @@
-{BASIC QUESTIONS}
-[
-    {
-        "question" : "Select your blood type",
-        "answer" : {
-            "a" : "A+",
-            "b" : "A-",
-            "c" : "B+",
-            "d" : "B-",
-            "e" : "O+",
-            "f" : "O-",
-            "g" : "AB+",
-            "h" : "AB-"
-        }
-    },
-    {
-        "question" : "How tall are you?",
-        "answer" : ""
-    },
-    {
-        "question" : "How much do you weigh?",
-        "answer" : ""
-    },
-    {
-        "question" : "Do you have any allergies? If yes, mention them",
-        "answer" : ""
-    },
-    {
-        "question" : "Your Past medical history",
-        "answer" : ""
-    },
-    {
-        "question" : "Are there any diseases or illnesses that run in the family?",
-        "answer" : ""
-    },
-    {
-        "question" : "Surgical history",
-        "answer" : ""
-    }
-]
-
-{FEVER}
-[
-    {
-        "question" : "How long you had the cough?",
-        "answer" : {
-            "a" : "less than 3 days",
-            "b" : "a week",
-            "c" : "10 days"
-        }
-    },
-    {
-        "question" : "Do you experience any chest pain?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have you lost weight recently?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you feel you have to work hard to breathe?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Are you eating outside, any gastrointestinal disturbances?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Are you experiencing vomiting, change of senses?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-]
-
-{DIARRHEA} 
-[
-    {
-        "question" : "How often/many times a day does patient have a bowel movement?",
-        "answer": {
-            "a" : "less than 5",
-            "b" : "5 - 10",
-            "c" : "more than 10"
-        }
-    },
-    {
-        "question" : "Do you have any pain or bloating?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Is there blood in your stool?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "What is the typical pattern?",
-        "answer": {
-            "a" : "loose",
-            "b" : "watery",
-            "c" : "fatty"
-        }
-    },
-    {
-        "question" : "Do you feel urgency in night times?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-]
-
-{HEADACHE} 
-[
-    {
-        "question" : "Do you recently had any emotional or physical stress?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you sleep atleast 6 - 8 hrs?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you have habit of taking alcohol?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    }
-]
-
-{ALLERGIES} 
-[
-    {
-        "question" : "Do you feel eye irritation?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do your eyes are puffy and watery?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    }
-]
-
-{SKIN ALLERGIES / RASHES}
-[
-    {
-        "question" : "When did the rash start?",
-        "answer": {
-            "a" : "<2 days",
-            "b" : "a week",
-            "c" : "1 month",
-            "d" : "several months"
-        }
-    },
-    {
-        "question" : "Is the rash itchy?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Is there anything that improves it or makes it worse?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Are there any new products that have come into direct contact with your skin?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Are you taking any new medications?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have you eaten anything unusual, especially shellfish or nuts?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have you been bitten by an insect or tic?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have your parents or any other family members ever had a similar rash?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    }
-]
-
-{CHRONIC COUGH}
-
-[
-    {
-        "question" : "How long have you had the cough?",
-        "answer": {
-            "a" : "2 - 3 days",
-            "b" : "a week",
-            "c" : "more than a week"
-        }
-    },
-    {
-        "question" : "Did your cough start with an illness or a lung infection?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you have chest discomfort with your cough?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have you had a fever recently?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you ever have night sweats?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    }
-]
-
-{DIABETES} 
-[
-    {
-        "question" : "Are you urinating a lot, often at night?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you have lost weight without trying?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Having numb or tingling hands or feet?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you feel very tired?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have more infections than usual?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have blurry vision?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Have sores that heal slowly?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    }
-]
-{STOMAACH PAIN}
-[
-    {
-        "question" : "Having severe pain?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Do you have fever?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Is your abdomen swelling?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Having persistent nausea and vomiting?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    },
-    {
-        "question" : "Having bloody stools?",
-        "answer": {
-            "a" : "yes",
-            "b" : "no"
-        }
-    }
-]
-
-
-
-
+{
+    "basicQue":[
+       {
+          "question":"Select your blood type",
+          "answer":{
+             "a":"A+",
+             "b":"A-",
+             "c":"B+",
+             "d":"B-",
+             "e":"O+",
+             "f":"O-",
+             "g":"AB+",
+             "h":"AB-"
+          }
+       },
+       {
+          "question":"How tall are you?",
+          "answer":""
+       },
+       {
+          "question":"How much do you weigh?",
+          "answer":""
+       },
+       {
+          "question":"Do you have any allergies? If yes, mention them",
+          "answer":""
+       },
+       {
+          "question":"Your Past medical history",
+          "answer":""
+       },
+       {
+          "question":"Are there any diseases or illnesses that run in the family?",
+          "answer":""
+       },
+       {
+          "question":"Surgical history",
+          "answer":""
+       }
+    ],
+    "fever":[
+       {
+          "question":"How long you had the cough?",
+          "answer":{
+             "a":"less than 3 days",
+             "b":"a week",
+             "c":"10 days"
+          }
+       },
+       {
+          "question":"Do you experience any chest pain?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have you lost weight recently?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you feel you have to work hard to breathe?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Are you eating outside, any gastrointestinal disturbances?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Are you experiencing vomiting, change of senses?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "diarrhea":[
+       {
+          "question":"How often/many times a day does patient have a bowel movement?",
+          "answer":{
+             "a":"less than 5",
+             "b":"5 - 10",
+             "c":"more than 10"
+          }
+       },
+       {
+          "question":"Do you have any pain or bloating?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Is there blood in your stool?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"What is the typical pattern?",
+          "answer":{
+             "a":"loose",
+             "b":"watery",
+             "c":"fatty"
+          }
+       },
+       {
+          "question":"Do you feel urgency in night times?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "headache":[
+       {
+          "question":"Do you recently had any emotional or physical stress?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you sleep atleast 6 - 8 hrs?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you have habit of taking alcohol?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "allergies":[
+       {
+          "question":"Do you feel eye irritation?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do your eyes are puffy and watery?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "skinAllergies":[
+       {
+          "question":"When did the rash start?",
+          "answer":{
+             "a":"<2 days",
+             "b":"a week",
+             "c":"1 month",
+             "d":"several months"
+          }
+       },
+       {
+          "question":"Is the rash itchy?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Is there anything that improves it or makes it worse?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Are there any new products that have come into direct contact with your skin?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Are you taking any new medications?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have you eaten anything unusual, especially shellfish or nuts?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have you been bitten by an insect or tic?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have your parents or any other family members ever had a similar rash?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "chronicCough":[
+       {
+          "question":"How long have you had the cough?",
+          "answer":{
+             "a":"2 - 3 days",
+             "b":"a week",
+             "c":"more than a week"
+          }
+       },
+       {
+          "question":"Did your cough start with an illness or a lung infection?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you have chest discomfort with your cough?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have you had a fever recently?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you ever have night sweats?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "diabetes":[
+       {
+          "question":"Are you urinating a lot, often at night?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you have lost weight without trying?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Having numb or tingling hands or feet?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you feel very tired?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have more infections than usual?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have blurry vision?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Have sores that heal slowly?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ],
+    "stomachPain":[
+       {
+          "question":"Having severe pain?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Do you have fever?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Is your abdomen swelling?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Having persistent nausea and vomiting?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       },
+       {
+          "question":"Having bloody stools?",
+          "answer":{
+             "a":"yes",
+             "b":"no"
+          }
+       }
+    ]
+ }

@@ -10,133 +10,95 @@
 </head>
 <body>
     <div class="wrapper">
-        <form class="form-box">
-            <div class="que">
-                <p class="question">Any other symptoms you have? If yes, mention them.</p>
-                <input type="text" name="answer" class="answer">
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
-            <div class="que">
-                <p class="question">What's your blood group?</p>
-                <select class="answer">
-                    <option value="A+">A+</option>
-                    <option value="A-">A+</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                </select>
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?How long you had the cough?How long you had the cough?How long you had the cough?How long you had the cough?How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
-            <div class="que">
-                <p class="question">How long you had the cough?</p>
-                <div class="answer">
-                    <input type="radio" name="answer" id="a">    
-                    <label for="a">less than 3 days</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="b">
-                    <label for="b">a week</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="c">
-                    <label for="c">10 days</label>
-                </div>
-            </div>
+        <form class="form-box" id="form-box">
 
-            <input type="submit" value="submit">
+            
+            <input type="submit" value="submit" id="submit">
         </form>
     </div>
-
+    
+    <script>
+        let submit = document.getElementById('submit')
+        let arr = [
+       {
+          "question":"Select your blood type",
+          "answer":{
+             "a":"A+",
+             "b":"A-",
+             "c":"B+",
+             "d":"B-",
+             "e":"O+",
+             "f":"O-",
+             "g":"AB+",
+             "h":"AB-"
+          }
+       },
+       {
+          "question":"Do you have any allergies? If yes, mention them",
+          "answer":""
+       },
+       {
+          "question":"How long you had the cough?",
+          "answer":{
+             "a":"less than 3 days",
+             "b":"a week",
+             "c":"10 days"
+          }
+       }
+    ]
+        
+        for(let i=0; i<arr.length; i++){
+            let que = document.createElement('div')
+            que.classList.add('que')
+            let id = `que-${i+1}`
+            que.setAttribute('id', id)
+            let question = document.createElement('p')
+            question.classList.add('question')
+            question.innerText = arr[i].question
+            que.appendChild(question)
+            let optionsLen = Object.keys(arr[i].answer).length
+            let j=0;
+            if(typeof(arr[i].answer)=="object" && optionsLen<=3){
+                let j=0;
+                for(const key in arr[i].answer){
+                    let answer = document.createElement('div')
+                    answer.classList.add('answer')
+                    let input = document.createElement('input')
+                    input.setAttribute('type', "radio")
+                    let id = `que-${i+1}(${j+1})`
+                    input.setAttribute('id', id)
+                    answer.appendChild(input)
+                    let label = document.createElement('label')
+                    label.setAttribute('for', id)                 
+                    label.innerText = `${arr[i].answer[key]}`
+                    answer.appendChild(label)
+                    que.appendChild(answer)
+                    j++
+                }  
+            }else if(typeof(arr[i].answer)=="object" && optionsLen>3){
+                let select = document.createElement('select')
+                select.classList.add('answer')
+                let j=0;
+                for(const key in arr[i].answer){
+                    let option = document.createElement('option')
+                    option.value = `${arr[i].answer[key]}`
+                    option.innerText = `${arr[i].answer[key]}`
+                    let id = `que-${i+1}(${j+1})`
+                    option.setAttribute('id', j+1)
+                    select.appendChild(option)
+                    j++
+                }  
+                que.appendChild(select)
+            }else{
+                let input = document.createElement('input')
+                input.setAttribute('type', "text")
+                let id = `que-${i+1}(1)`
+                input.classList.add('answer')
+                input.setAttribute('id', id)
+                que.appendChild(input)
+            }
+            submit.before(que)
+        }
+    </script>
 </body>
 </html>
