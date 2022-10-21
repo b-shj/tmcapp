@@ -34,16 +34,24 @@
           }
        },
        {
+          "question":"Weight (in Kgs)",
+          "answer": 25
+       },
+       {
           "question":"Do you have any allergies? If yes, mention them",
           "answer":""
        },
        {
-          "question":"How long you had the cough?",
-          "answer":{
-             "a":"less than 3 days",
-             "b":"a week",
-             "c":"10 days"
-          }
+          "question":"Past medical history",
+          "answer":""
+       },
+       {
+          "question":"Are there any diseases or illnesses that run in the family?",
+          "answer":""
+       },
+       {
+          "question":"Surgical history",
+          "answer":""
        }
     ]
         
@@ -89,6 +97,14 @@
                     j++
                 }  
                 que.appendChild(select)
+            }else if(typeof(arr[i].answer)=="number"){
+                let input = document.createElement('input')
+                input.setAttribute('type', "number")
+                let id = `que-${i+1}(1)`
+                input.classList.add('answer')
+                input.setAttribute('id', id)
+                input.setAttribute('min',1)
+                que.appendChild(input)
             }else{
                 let input = document.createElement('input')
                 input.setAttribute('type', "text")

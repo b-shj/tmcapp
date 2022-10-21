@@ -14,19 +14,15 @@
           }
        },
        {
-          "question":"How tall are you?",
-          "answer":""
-       },
-       {
-          "question":"How much do you weigh?",
-          "answer":""
+          "question":"Weight (in Kgs)",
+          "answer": 25
        },
        {
           "question":"Do you have any allergies? If yes, mention them",
           "answer":""
        },
        {
-          "question":"Your Past medical history",
+          "question":"Past medical history",
           "answer":""
        },
        {
